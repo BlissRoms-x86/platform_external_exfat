@@ -3,7 +3,7 @@ include $(CLEAR_VARS)
 
 LOCAL_MODULE := mount.exfat
 LOCAL_MODULE_TAGS := optional
-LOCAL_CFLAGS := -D_FILE_OFFSET_BITS=64
+LOCAL_CFLAGS := -D_FILE_OFFSET_BITS=64 -Wno-unused-parameter
 LOCAL_SRC_FILES := main.c
 LOCAL_SHARED_LIBRARIES := libexfat libfuse-lite
 include $(BUILD_EXECUTABLE)
